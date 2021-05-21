@@ -1,0 +1,22 @@
+<head>
+</head>
+<body>
+  <%= form_with scope: :user, url: create_user_path do |f| %>
+    <div>
+      <%= f.label :"Email", class:"test" %>
+      <%= f.text_field :email, class:"test" %>
+    </div>
+
+    <div>
+      <%= f.label :"Username", class:"test" %>
+      <%= f.text_field :username, class:"test" %>
+    </div>
+
+    <div>
+      <%= f.label :"Password", class:"test" %>
+      <%= f.text_field :password, class:"test" %>
+    </div>
+
+    <%= f.submit "Submit", :class => "test" %>
+  <% end %>
+</body>
